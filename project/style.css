@@ -1,0 +1,88 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 0;
+}
+h1 {
+  font-family: cursive;
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+.wrap-card {
+  width: 20%;
+  border-radius: 8px;
+  background-color: aliceblue;
+  border: 1px solid black;
+  padding-bottom: 10px;
+  transition: all 1s ease;
+  transition-duration: 300ms;
+  box-shadow: 10px 10px 5px #888888;
+}
+.wrap-card:hover {
+  transform: scale(1.05);
+}
+.wrap-card:hover p {
+  animation: scrollText 4s infinite linear;
+}
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+.tech {
+  padding: 5px 5px;
+  overflow: hidden;
+}
+p {
+  color: white;
+  font-size: 15px;
+  white-space: nowrap;
+  padding: 0 10px;
+}
+span {
+  border-radius: 9999px;
+  padding: 5px 8px;
+  font-family: monospace;
+}
+h3 {
+  font-size: 25px;
+  margin: 10px 5px 10px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.react {
+  background-color: aqua;
+  color: black;
+}
+.html {
+  background-color: rgb(255, 94, 0);
+}
+.css {
+  background-color: rgb(0, 85, 255);
+}
+.javascript {
+  background-color: gold;
+  color: black;
+}
+@keyframes scrollText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@media (max-width: 1200px) {
+  .wrap-card {
+    width: 40%;
+  }
+}
+@media (max-width: 486px) {
+  .wrap-card {
+    width: 80%;
+  }
+}
